@@ -1,1 +1,3 @@
 BookShelf
+*.pyc
+__pycache__/
