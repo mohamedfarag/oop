@@ -13,7 +13,7 @@ class Book {
     int year;
 
  public: 
-    Book(const string &title, const string &author, int year);
+    Book(const string& title, const string& author, int year);
     void printDetails() const;
 };
 
