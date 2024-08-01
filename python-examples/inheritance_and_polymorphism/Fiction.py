@@ -1,3 +1,4 @@
+from typing import override
 from Book import Book
 
 class Fiction(Book):
@@ -8,6 +9,7 @@ class Fiction(Book):
     def __del__(self):
         print(f"Deleted a book with Genre of: {self.genre}")
 
+    @override
     def print_details(self):
         super().print_details()
         print(f"Genre: {self.genre}")

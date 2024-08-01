@@ -1,3 +1,4 @@
+from typing import override
 from Book import Book
 
 class Science(Book):
@@ -5,6 +6,7 @@ class Science(Book):
         super().__init__(title, author, year)
         self.field = field
 
+    @override
     def print_details(self):
         super().print_details()
         print(f"Field: {self.field}")
